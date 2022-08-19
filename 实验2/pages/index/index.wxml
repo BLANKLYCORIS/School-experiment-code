@@ -1,0 +1,33 @@
+<view class="container">
+  <!--区域1：地区选择器-->
+  <picker mode="region"bindchange = "regionChange">
+    <view wx:for="{{region}}">{{item}}</view>
+  </picker>
+  <!--区域2：单行天气信息-->
+  <text>{{tmp}} ℃ {{cond_txt}}</text>
+  <!--区域3：天气图标-->
+  <image src="/images/weather_icon/{{cond_code}}.png"mode="widthFix"></image>
+  <!--区域4：多行天气信息-->
+  <view class="detail">
+    <view class="bar">
+      <view class="box">湿度</view>
+      <view class="box">气压</view>
+      <view class="box">能见度</view>
+    </view>
+    <view class="bar">
+      <view class="box">{{hum}} %</view>
+      <view class="box">{{pres}} hPa</view>
+      <view class="box">{{vis}} km</view>
+    </view>
+    <view class="bar">
+      <view class="box">风向</view>
+      <view class="box">风速</view>
+      <view class="box">风力</view>
+    </view>
+    <view class="bar">
+      <view class="box">{{wind_dir}}</view>
+      <view class="box">{{wind_spd}} km/h</view>
+      <view class="box">{{wind_sc}} 级</view>
+    </view>
+  </view>
+</view>

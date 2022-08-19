@@ -3,8 +3,8 @@
     "pages/index/index"
   ],
   "window":{
-    "navigationBarBackgroundColor": "#663399",
-    "navigationBarTitleText": "手动创建第一个小程序"
+    "navigationBarBackgroundColor": "#3883FA",
+    "navigationBarTitleText": "今日天气"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
